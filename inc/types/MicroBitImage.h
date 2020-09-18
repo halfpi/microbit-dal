@@ -130,6 +130,14 @@ class MicroBitImage
       * MicroBitImage i("0,1,0,1,0\n1,0,1,0,1\n0,1,0,1,0\n1,0,1,0,1\n0,1,0,1,0\n"); // 5x5 image
       * @endcode
       */
+     /*
+     c++ explicit 关键字
+     https://www.jianshu.com/p/af8034ec0e7a
+     explicit的出要作用是：只能用来修饰类构造函数; explicit修饰的构造函数不能被隐式调用; 禁止类对象之间的隐式转换。
+     
+     explicit 说明符
+     https://zh.cppreference.com/w/cpp/language/explicit
+     */
     explicit MicroBitImage(const char *s);
 
     /**
@@ -172,6 +180,13 @@ class MicroBitImage
       *
       * Removes buffer resources held by the instance.
       */
+     /*
+     类的析构函数
+     https://www.runoob.com/cplusplus/cpp-constructor-destructor.html
+     类的析构函数是类的一种特殊的成员函数，它会在每次删除所创建的对象时执行。
+     析构函数的名称与类的名称是完全相同的，只是在前面加了个波浪号（~）作为前缀，它不会返回任何值，也不能带有任何参数。
+     析构函数有助于在跳出程序（比如关闭文件、释放内存等）前释放资源。
+     */
     ~MicroBitImage();
 
     /**
@@ -193,6 +208,13 @@ class MicroBitImage
       * i1 = i; // i1 now references i
       * @endcode
       */
+     /*
+     C++ 引用
+     https://www.runoob.com/cplusplus/cpp-references.html
+
+     C++ 重载运算符
+     https://www.runoob.com/cplusplus/cpp-overloading.html
+     */
     MicroBitImage& operator = (const MicroBitImage& i);
 
 

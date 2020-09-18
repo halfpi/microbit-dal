@@ -73,6 +73,12 @@ class MicroBitEvent
       * MicrobitEvent evt(id,MICROBIT_BUTTON_EVT_CLICK,CREATE_AND_FIRE);
       * @endcode
       */
+     /* 
+     类的构造函数
+     https://www.runoob.com/cplusplus/cpp-constructor-destructor.html
+     类的构造函数是类的一种特殊的成员函数，它会在每次创建类的新对象时执行。
+     构造函数的名称与类的名称是完全相同的，并且不会返回任何类型，也不会返回 void。构造函数可用于为某些成员变量设置初始值。
+      */
     MicroBitEvent(uint16_t source, uint16_t value, MicroBitEventLaunchMode mode = MICROBIT_EVENT_DEFAULT_LAUNCH_MODE);
 
     /**

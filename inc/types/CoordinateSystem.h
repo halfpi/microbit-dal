@@ -56,6 +56,10 @@ DEALINGS IN THE SOFTWARE.
  * x  +--------------------+  y-->
  *
  */
+/*
+North East Down (NED) system 大地坐标系
+https://zh.wikipedia.org/wiki/%E5%A4%A7%E5%9C%B0%E5%9D%90%E6%A0%87%E7%B3%BB
+*/
 
 #define COORDINATE_SPACE_ROTATED_0      0
 #define COORDINATE_SPACE_ROTATED_90     1
